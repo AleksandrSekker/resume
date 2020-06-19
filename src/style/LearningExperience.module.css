@@ -1,0 +1,117 @@
+body {
+  background: rgb(218, 216, 216);
+}
+.mainText {
+  text-align: center;
+  margin-top: 5rem;
+}
+.firstContainer {
+  width: 50%;
+  width: 30rem;
+  height: 20rem;
+  background: white;
+  margin-bottom: 2rem;
+  clip-path: polygon(1% 0%, 95% 0, 95% 26%, 98% 34%, 95% 44%, 95% 100%, 1% 99%);
+  /* clip-path: polygon(100% 0, 100% 100%, 5% 100%, 5% 44%, 2% 34%, 5% 26%, 5% 0); */
+}
+.secondContainer {
+  width: 50%;
+  width: 30rem;
+  height: 20rem;
+  background: white;
+  margin-bottom: 2rem;
+  clip-path: polygon(100% 0, 100% 100%, 5% 100%, 5% 44%, 2% 34%, 5% 26%, 5% 0);
+}
+.html {
+  color: black;
+  margin: auto;
+  font-size: 5rem;
+  color: orange;
+}
+.css {
+  font-size: 5rem;
+  color: blue;
+}
+.js {
+  font-size: 5rem;
+  margin-left: 2rem;
+  color: orange;
+
+  /* background: black; */
+  /* background-size: cover; */
+}
+.sass {
+  font-size: 5rem;
+  margin-left: 2rem;
+  color: rgb(236, 128, 146);
+}
+.git {
+  font-size: 5rem;
+  margin-left: 2rem;
+  color: rgb(235, 112, 75);
+}
+.terminal {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-left: 2rem;
+  color: rgb(255, 255, 255);
+  background: #000;
+}
+.bootstrap {
+  font-size: 5rem;
+  margin-left: 2rem;
+  color: rgb(98, 77, 165);
+}
+.react {
+  font-size: 5rem;
+  margin-left: 2rem;
+  color: rgb(60, 0, 255);
+}
+.node {
+  font-size: 5rem;
+  margin-left: 2rem;
+  color: rgb(30, 163, 63);
+}
+.verticalLine {
+  height: 64rem;
+  /* border: 0.2rem solid rgb(255, 134, 134); */
+  width: 0.4rem;
+  background: rgb(255, 134, 134);
+}
+.dot {
+  /* border: red 0.3rem solid; */
+  background: red;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-left: -0.2rem;
+
+  border-radius: 100%;
+}
+.dotOne {
+  margin-top: 6.35rem;
+}
+
+.dotTwo {
+  margin-top: 4.3rem;
+}
+
+.dotThree {
+  margin-top: 16.3rem;
+}
+
+.dotFour {
+  margin-top: 4rem;
+}
+.dotFive {
+  margin-top: 16.2rem;
+}
+.flex {
+  display: flex;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.flexColumnTwo {
+  margin-top: 5rem;
+}

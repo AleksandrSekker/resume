@@ -1,0 +1,70 @@
+.containerFluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.705); */
+  flex-direction: column;
+}
+.container {
+  width: 100%;
+  height: 60%;
+  background: white;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.secondContainer {
+  width: 50%;
+  margin-top: 2rem;
+}
+.containerSocialMedia {
+  width: 100%;
+  height: 20%;
+  background: rgb(170, 122, 122);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.image {
+  margin: 4rem 4rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 0.2rem;
+}
+
+.message {
+  width: 6rem;
+  color: white;
+  text-align: center;
+
+  height: 2.5rem;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  background: red;
+  margin-top: 2rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 76%, 22% 76%, 9% 100%, 9% 76%, 0 76%);
+}
+.flexbox {
+  display: flex;
+}
+.flexboxTwo {
+  margin-left: 6rem;
+}
+.containerSocialMedia {
+}
+.socialMediaCenter {
+  text-align: center;
+}
+.icons {
+  font-size: 4rem;
+  margin: 2rem;
+  color: white;
+  transition-duration: 1s;
+  transition-property: transform;
+}
+.icons:hover {
+  color: black;
+  transform: rotate(360deg);
+}
