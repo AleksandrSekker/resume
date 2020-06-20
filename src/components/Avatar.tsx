@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AvatarImage from '../image/2020-05-25 09.00.14.jpg';
+
 import style from '../style/Avatar.module.css';
+import { useSelector, useDispatch } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
@@ -8,31 +10,71 @@ import {
   faGithub,
   faSkype,
 } from '@fortawesome/free-brands-svg-icons';
+import '../assets/main.css';
+import '../style/Avatar.module.css';
+import { faLanguage, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import EnglishFlag from '../svg/uk.svg';
+import UkraineFlag from '../svg/ukraine.svg';
+import { selectLanguage } from '../redux/languageSlice';
+import { greetEng, greetUa } from '../redux/languageSlice';
 export interface AvatarProps {}
 
 const Avatar: React.SFC<AvatarProps> = () => {
+  let [flag, setflag] = useState(EnglishFlag);
+  const [hello, sethello] = useState('Hello');
+  const [name, setname] = useState("I'm Aleksandr Sekker");
+  const [age, setage] = useState('AGE');
+  const [location, setlocation] = useState('CITY');
+  const [locationName, setlocationName] = useState('Ukraine, Kryvyi Rih');
+  const [email, setemail] = useState('EMAIL');
+  const [phone, setphone] = useState('PHONE');
+  const languageHandler = () => {
+    flag === EnglishFlag ? setflag(UkraineFlag) : setflag(EnglishFlag);
+    hello === 'Hello' ? sethello('Привіт') : sethello('Hello');
+    name === "I'm Aleksandr Sekker"
+      ? setname('Олександр Секкер')
+      : setname("I'm Aleksandr Sekker");
+    age === 'AGE' ? setage('ВІК') : setage('AGE');
+    location === 'CITY' ? setlocation('МІСТО') : setlocation('CITY');
+    locationName === 'Ukraine, Kryvyi Rih'
+      ? setlocationName('Україна, Кривий Ріг')
+      : setlocationName('Ukraine, Kryvyi Rih');
+    email === 'EMAIL' ? setemail('Електронна пошта') : setemail('EMAIL');
+    phone === 'PHONE' ? setphone('Номер телефону') : setphone('PHONE');
+  };
   return (
     <div className={style.containerFluid}>
+      <div className={style.buttons}>
+        <button onClick={languageHandler}>
+          <img src={flag} alt='' className={style.flag} />
+        </button>
+        <FontAwesomeIcon icon={faSun} className={style.themeSun} />
+      </div>
+
       <div className={style.container}>
         <img src={AvatarImage} alt='avatar' className={style.image} />
 
         <div className={style.secondContainer}>
-          <div className={style.message}>Hello</div>
-          <h2>I'm Aleksandr Sekker</h2>
-          <h1>Looking for junior Front End developer position</h1>
+          <div className={style.message}>{hello}</div>
+          <h2>{name}</h2>
+          <h1>Front End developer</h1>
           <hr className={style.throwLine} />
           <div className={style.flexbox}>
-            <div className={style.flexboxOne}>
-              <p>AGE</p>
-              <p>Location</p>
-              <p>E-Maile</p>
-              <p>PHONE</p>
+            <div className={style.contText}>
+              <p className={style.textFirst}>{age}</p>
+              <p className={style.textSecond}>23</p>
             </div>
-            <div className={style.flexboxTwo}>
-              <p>23</p>
-              <p>Ukraine, Kryvyi Rih</p>
-              <p>aleksandr.sekker@gmail.com</p>
-              <p>0686902733</p>
+            <div className={style.contText}>
+              <p className={style.textFirst}>{location}</p>
+              <p className={style.textSecond}>{locationName}</p>
+            </div>
+            <div className={style.contText}>
+              <p className={style.textFirst}>{email}</p>
+              <p className={style.textSecond}>aleksandr.sekker@gmail.com</p>
+            </div>
+            <div className={style.contText}>
+              <p className={style.textFirst}>{phone}</p>
+              <p className={style.textSecond}>0686902733</p>
             </div>
           </div>
         </div>

@@ -2,23 +2,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.705); */
   flex-direction: column;
 }
-.container {
+.buttons {
+  display: flex;
   width: 100%;
-  height: 60%;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.flag {
+  width: 2rem;
+  height: 2rem;
+}
+.themeSun {
+  font-size: 2rem;
+  color: white;
+}
+
+.container {
+  margin-top: 2rem;
+  width: 100%;
   background: white;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  display: flex;
-  flex-direction: row;
 }
 .secondContainer {
-  width: 50%;
   margin-top: 2rem;
+  padding: 0 2rem;
 }
 .containerSocialMedia {
   width: 100%;
@@ -28,9 +38,9 @@
   border-bottom-right-radius: 2rem;
 }
 .image {
-  margin: 4rem 4rem;
-  width: 20rem;
-  height: 20rem;
+  margin: 2rem auto;
+  width: 80%;
+  height: auto;
   border-radius: 0.2rem;
 }
 
@@ -38,19 +48,29 @@
   width: 6rem;
   color: white;
   text-align: center;
-
+  margin: auto;
   height: 2.5rem;
   font-size: 1rem;
-  padding-top: 0.5rem;
+  padding-top: 0.2rem;
   background: red;
   margin-top: 2rem;
   clip-path: polygon(0% 0%, 100% 0%, 100% 76%, 22% 76%, 9% 100%, 9% 76%, 0 76%);
 }
+.contText {
+  margin: 1rem 0;
+}
+.textFirst {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.textSecond {
+  color: rgb(157, 158, 160);
+}
 .flexbox {
-  display: flex;
+  margin-top: 2rem;
 }
 .flexboxTwo {
-  margin-left: 6rem;
 }
 .containerSocialMedia {
 }
@@ -58,8 +78,8 @@
   text-align: center;
 }
 .icons {
-  font-size: 4rem;
-  margin: 2rem;
+  font-size: 2rem;
+  margin: 1rem;
   color: white;
   transition-duration: 1s;
   transition-property: transform;
@@ -67,4 +87,30 @@
 .icons:hover {
   color: black;
   transform: rotate(360deg);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+@media only screen and (min-width: 481px) {
+  /* Styles */
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+  .image {
+    width: 25rem;
+    height: 25rem;
+    margin: 1rem 2rem;
+  }
+  .icons {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* Styles */
+}
+@media only screen and (min-width: 1224px) {
+  /* Styles */
 }

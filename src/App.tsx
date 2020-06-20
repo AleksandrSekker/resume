@@ -10,8 +10,8 @@ function App() {
   return (
     <div className='containerForAll'>
       <Avatar />
-      <LearningExperience />
-      <Hobbies />
+      {/* <LearningExperience />
+      <Hobbies /> */}
     </div>
   );
 }
