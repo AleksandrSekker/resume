@@ -13,37 +13,50 @@ import {
   faNode,
   faNodeJs,
 } from '@fortawesome/free-brands-svg-icons';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export interface LearningExperienceProps {}
 
 const LearningExperience: React.SFC<LearningExperienceProps> = () => {
+  AOS.init();
   return (
     <>
-      <h1 className={style.mainText}>Learning Experience</h1>
+      <h1 className={style.mainText}></h1>
       <div className={style.flex}>
         <div className={style.flexColumn}>
-          <div className={style.firstContainer}>
+          <div
+            className={style.firstContainer}
+            data-aos='fade-right'
+            data-aos-duration='1500'
+          >
             <FontAwesomeIcon icon={faHtml5} className={style.html} />
             <FontAwesomeIcon icon={faCss3Alt} className={style.css} />
 
-            <p>layout, animation, typography, colors</p>
             <p>
-              Responsive design, grid, flexbox, semantic approach and media
-              queries
+              layout, animation, typography, colors, gradients, transformation,
+              attribute selectors etc
+            </p>
+            <p>
+              Responsive design principles, grid, flexbox, semantic approach
             </p>
           </div>
-          <div className={style.firstContainer}>
+          <div
+            className={style.firstContainer}
+            data-aos='fade-right'
+            data-aos-duration='1500'
+          >
             <FontAwesomeIcon icon={faSass} className={style.sass} />
             <FontAwesomeIcon icon={faBootstrap} className={style.bootstrap} />
-            <FontAwesomeIcon icon={faGitAlt} className={style.git} />
-            <FontAwesomeIcon icon={faTerminal} className={style.terminal} />
-            <p>asdfsdf</p>
+            <p>SCSS variable, nesting, mixin, modules</p>
+            <p>know bootstrap and tailwind classes</p>
           </div>
-          <div className={style.firstContainer}>
-            <p>
-              Also sometimes i use typescript, few times coding on react native
-              (using api) for test projects. Actually almost didn't use back end
-              technology, but understand how work node, express and mongo db
-            </p>
+          <div
+            className={style.firstContainer}
+            data-aos='fade-right'
+            data-aos-duration='1500'
+          >
+            <FontAwesomeIcon icon={faGitAlt} className={style.git} />
+            <p>Git, debugging, npm </p>
           </div>
         </div>
         <div className={style.verticalLine}>
@@ -52,23 +65,40 @@ const LearningExperience: React.SFC<LearningExperienceProps> = () => {
           <div className={`${style.dot} ${style.dotThree}`}></div>
           <div className={`${style.dot} ${style.dotFour}`}></div>
           <div className={`${style.dot} ${style.dotFive}`}></div>
+          <div className={`${style.dot} ${style.dotSix}`}></div>
         </div>
         <div className={style.flexColumnTwo}>
-          <div className={style.secondContainer}>
+          <div
+            className={style.secondContainer}
+            data-aos='fade-left'
+            data-aos-duration='1500'
+          >
             <FontAwesomeIcon icon={faJs} className={style.js} />
-            <p>Start from basic: Variables, Types, function, loops, objects </p>
             <p>
-              DOM tree, start building project, timer, clock, quize, quizzes
-              etc. Learn es6, work with APIs
+              Language fundamentals, DOM manipulation, events, oop, asynchronous
+              programming, working with api, es6 and higher, error handling etc
             </p>
           </div>
-          <div className={style.secondContainer}>
+          <div
+            className={style.secondContainer}
+            data-aos='fade-left'
+            data-aos-duration='1500'
+          >
             <FontAwesomeIcon icon={faReact} className={style.react} />
             <p>
-              Start learn react, react router, hooks. For learning react build
-              small thing like counter, todolist, slider, filterable list,
-              random quote machine etc. Later start using redux for state
-              managment
+              State, props, jsx, react router, class component, functional
+              component, hooks, redux for state management. Also have experience
+              using typescript and react native
+            </p>
+          </div>
+          <div
+            className={style.secondContainer}
+            data-aos='fade-left'
+            data-aos-duration='1500'
+          >
+            <p>
+              Also have good theoretical knowledge about node, express and mongo
+              db
             </p>
           </div>
         </div>

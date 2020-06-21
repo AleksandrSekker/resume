@@ -6,23 +6,23 @@ interface languageState {
 }
 
 const initialState: languageState = {
-  value: 'Hello',
+  value: 'light',
 };
 
 export const languageSlice = createSlice({
   name: 'language',
   initialState,
   reducers: {
-    greetEng: (state) => {
-      state.value = 'Hello';
+    light: (state) => {
+      state.value = 'light';
     },
-    greetUa: (state) => {
-      state.value = 'Привіт';
+    dark: (state) => {
+      state.value = 'dark';
     },
   },
 });
 
-export const { greetEng, greetUa } = languageSlice.actions;
+export const { light, dark } = languageSlice.actions;
 
 export const selectLanguage = (state: RootState) => state.language.value;
 

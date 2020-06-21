@@ -1,3 +1,9 @@
+.dark {
+  background: #000;
+}
+.light {
+  background: grey;
+}
 .containerFluid {
   display: flex;
   justify-content: center;
@@ -13,6 +19,13 @@
 .flag {
   width: 2rem;
   height: 2rem;
+  outline: none;
+}
+.flag:focus {
+  outline: 0;
+}
+.flag:active {
+  outline: none;
 }
 .themeSun {
   font-size: 2rem;

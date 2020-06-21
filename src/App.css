@@ -3,6 +3,9 @@
   width: 90%;
   margin: auto;
 }
-body {
-  background: grey;
+.light {
+  background: rgb(168, 165, 165);
+}
+.dark {
+  background: rgb(34, 34, 34);
 }

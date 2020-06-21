@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AvatarImage from '../image/2020-05-25 09.00.14.jpg';
 
 import style from '../style/Avatar.module.css';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
@@ -12,15 +12,15 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import '../assets/main.css';
 import '../style/Avatar.module.css';
-import { faLanguage, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import EnglishFlag from '../svg/uk.svg';
 import UkraineFlag from '../svg/ukraine.svg';
-import { selectLanguage } from '../redux/languageSlice';
-import { greetEng, greetUa } from '../redux/languageSlice';
+import { light, dark, selectLanguage } from '../redux/languageSlice';
 export interface AvatarProps {}
 
 const Avatar: React.SFC<AvatarProps> = () => {
   let [flag, setflag] = useState(EnglishFlag);
+  const [theme, settheme] = useState(faSun);
   const [hello, sethello] = useState('Hello');
   const [name, setname] = useState("I'm Aleksandr Sekker");
   const [age, setage] = useState('AGE');
@@ -28,6 +28,9 @@ const Avatar: React.SFC<AvatarProps> = () => {
   const [locationName, setlocationName] = useState('Ukraine, Kryvyi Rih');
   const [email, setemail] = useState('EMAIL');
   const [phone, setphone] = useState('PHONE');
+  const [themeBg, setthemeBg] = useState(style.light);
+  const [trueorfalse, settrueorfalse] = useState(true);
+  const dispatch = useDispatch();
   const languageHandler = () => {
     flag === EnglishFlag ? setflag(UkraineFlag) : setflag(EnglishFlag);
     hello === 'Hello' ? sethello('Привіт') : sethello('Hello');
@@ -42,13 +45,27 @@ const Avatar: React.SFC<AvatarProps> = () => {
     email === 'EMAIL' ? setemail('Електронна пошта') : setemail('EMAIL');
     phone === 'PHONE' ? setphone('Номер телефону') : setphone('PHONE');
   };
+  const themeHandler = () => {
+    theme === faSun ? settheme(faMoon) : settheme(faSun);
+    if (trueorfalse === true) {
+      dispatch(dark());
+      settrueorfalse(false);
+    } else {
+      dispatch(light());
+      settrueorfalse(true);
+    }
+  };
   return (
     <div className={style.containerFluid}>
       <div className={style.buttons}>
-        <button onClick={languageHandler}>
+        <div onClick={languageHandler}>
           <img src={flag} alt='' className={style.flag} />
-        </button>
-        <FontAwesomeIcon icon={faSun} className={style.themeSun} />
+        </div>
+        <FontAwesomeIcon
+          icon={theme}
+          className={style.themeSun}
+          onClick={themeHandler}
+        />
       </div>
 
       <div className={style.container}>
