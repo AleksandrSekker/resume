@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.64f7b6fa.chunk.css",
-    "main.js": "/resume/static/js/main.1fc6755f.chunk.js",
-    "main.js.map": "/resume/static/js/main.1fc6755f.chunk.js.map",
+    "main.css": "/resume/static/css/main.24bd91e6.chunk.css",
+    "main.js": "/resume/static/js/main.8ace4cb6.chunk.js",
+    "main.js.map": "/resume/static/js/main.8ace4cb6.chunk.js.map",
     "runtime-main.js": "/resume/static/js/runtime-main.b51c8b56.js",
     "runtime-main.js.map": "/resume/static/js/runtime-main.b51c8b56.js.map",
     "static/css/2.4707e12a.chunk.css": "/resume/static/css/2.4707e12a.chunk.css",
-    "static/js/2.ac3fd3cc.chunk.js": "/resume/static/js/2.ac3fd3cc.chunk.js",
-    "static/js/2.ac3fd3cc.chunk.js.map": "/resume/static/js/2.ac3fd3cc.chunk.js.map",
+    "static/js/2.9c6f71d6.chunk.js": "/resume/static/js/2.9c6f71d6.chunk.js",
+    "static/js/2.9c6f71d6.chunk.js.map": "/resume/static/js/2.9c6f71d6.chunk.js.map",
     "index.html": "/resume/index.html",
-    "precache-manifest.f4b9c027e54985b94940878449f5ace6.js": "/resume/precache-manifest.f4b9c027e54985b94940878449f5ace6.js",
+    "precache-manifest.976c0f00281232f1fdcfbecafae08040.js": "/resume/precache-manifest.976c0f00281232f1fdcfbecafae08040.js",
     "service-worker.js": "/resume/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/resume/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.64f7b6fa.chunk.css.map": "/resume/static/css/main.64f7b6fa.chunk.css.map",
-    "static/js/2.ac3fd3cc.chunk.js.LICENSE.txt": "/resume/static/js/2.ac3fd3cc.chunk.js.LICENSE.txt",
+    "static/css/main.24bd91e6.chunk.css.map": "/resume/static/css/main.24bd91e6.chunk.css.map",
+    "static/js/2.9c6f71d6.chunk.js.LICENSE.txt": "/resume/static/js/2.9c6f71d6.chunk.js.LICENSE.txt",
     "static/media/2020-05-25 09.00.14.jpg": "/resume/static/media/2020-05-25 09.00.14.19afdf95.jpg",
+    "static/media/Screen Shot 2020-06-22 at 4.45.38 PM.png": "/resume/static/media/Screen Shot 2020-06-22 at 4.45.38 PM.6fb62506.png",
+    "static/media/Screen Shot 2020-06-22 at 4.47.00 PM.png": "/resume/static/media/Screen Shot 2020-06-22 at 4.47.00 PM.81a3e480.png",
+    "static/media/Screen Shot 2020-06-22 at 4.48.11 PM.png": "/resume/static/media/Screen Shot 2020-06-22 at 4.48.11 PM.38cfe014.png",
+    "static/media/Screen Shot 2020-06-22 at 4.49.31 PM.png": "/resume/static/media/Screen Shot 2020-06-22 at 4.49.31 PM.8f679329.png",
     "static/media/codecademy-ar21.svg": "/resume/static/media/codecademy-ar21.a247b053.svg",
     "static/media/free-code-camp-brands.svg": "/resume/static/media/free-code-camp-brands.0696ccce.svg",
     "static/media/udemy-ar21.svg": "/resume/static/media/udemy-ar21.20a84f12.svg",
@@ -24,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.b51c8b56.js",
     "static/css/2.4707e12a.chunk.css",
-    "static/js/2.ac3fd3cc.chunk.js",
-    "static/css/main.64f7b6fa.chunk.css",
-    "static/js/main.1fc6755f.chunk.js"
+    "static/js/2.9c6f71d6.chunk.js",
+    "static/css/main.24bd91e6.chunk.css",
+    "static/js/main.8ace4cb6.chunk.js"
   ]
 }
